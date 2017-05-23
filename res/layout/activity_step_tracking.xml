@@ -1,0 +1,50 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/IPtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:text="172.26.191.55">
+        <requestFocus />
+    </EditText>
+
+    <TextView 
+    android:id="@+id/WalkingStateTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="100px"
+    android:text="" />
+    
+    <TextView 
+    android:id="@+id/StepCountTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="100px"
+    android:text="" />
+
+    <TextView 
+    android:id="@+id/HeadingTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="100px"
+    android:text="" />
+
+    <TextView
+        android:id="@+id/wifiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30px" />
+    
+    <Button
+        android:id="@+id/resetStepButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onResetStepButtonClicked"
+        android:text="Reset Step" />
+
+</LinearLayout>
